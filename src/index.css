@@ -1,0 +1,42 @@
+@tailwind base;
+
+
+@layer base {
+  body {
+    @apply  font-primary text-base leading-relaxed;
+  }
+  section {
+    @apply py-[30px] lg:py-[30px];
+  }
+}
+
+
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  scroll-behavior: smooth;
+}
+
+body{
+  background: #fff;
+  overflow-y: hidden;
+}
+.app:before {
+  content: '';
+  background: url(https://source.unsplash.com/featured/?technology) no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.top{
+  margin: 1rem auto;
+}
+.desc{
+  transform-origin: 0 0;
+  transform: rotate(90deg);
+}
